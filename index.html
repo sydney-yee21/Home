@@ -12,7 +12,7 @@ Home
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-sale=1.0, width=device-width">
 
-<!-- 
+    <!-- 
 Code copied from: https://www.w3schools.com/css/tryit.aspfilename=trycss_dropdown_navbar2
 
 Author: W3Schools 
@@ -23,45 +23,66 @@ Description: Demonstrates how to create a navigation bar along with a dropdown m
 
 Date retrieved: Wednesday, November 12, 2025
 -->
-   <style>
+    
+<!--    
+Code copied from: https://www.w3schools.com/howto/howto_css_image_text.asp
+
+Author: W3Schools 
+
+Name: How TO - Position Text Over an Image
+
+Description: Demonstrates how to create a image overlay another an image
+
+Date retrieved: Wednesday, November 12, 2025
+-->
+    <style>
+      
+      html {
+        font-size: 16px; /* change ems */
+      }
+      
       body {
         margin: 0;
         padding: 0;
       }
+
       h2,
       p {
         margin: 10px;
       }
+
       ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
         background-color: white;
-        height: 50px;
+        height: 75px;
         display: flex;
         align-items: center;
       }
+
       li {
-        float: none; 
+        float: none;
       }
-      
+
       li.logo {
-        margin-right: auto; 
+        margin-right: auto;
       }
-      
+
       li a,
       .dropbtn {
         display: inline-block;
         color: rgb(146, 110, 79);
         text-align: center;
-        padding: 14px 16px;
+        padding: 30px 20px;
         text-decoration: none;
       }
+
       li.dropdown {
         display: inline-block;
       }
-      
+
       .dropdown-content {
         display: none;
         position: absolute;
@@ -69,27 +90,53 @@ Date retrieved: Wednesday, November 12, 2025
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
-        top: 50px; 
+        top: 50px;
       }
+
       .dropdown-content a {
         color: rgb(146, 110, 79);
-        padding: 12px 16px;
+        padding: 30px 20px;
         text-decoration: none;
         display: block;
         text-align: left;
       }
-      
-       li a:hover,
+
+      li a:hover,
       .dropdown:hover .dropbtn {
         background-color: #f9f9f9;
       }
+
       .dropdown-content a:hover {
         background-color: #f1f1f1;
       }
+
       .dropdown:hover .dropdown-content {
         display: block;
       }
+
+      .overlay {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
       
+      mark {
+        background-color: beige;
+        padding: 20px;
+        display: inline-block;
+        width: 300px;
+        height: 2em;
+        line-height: 1.5;
+        
+        
+      }
     </style>
   </head>
   <body>
@@ -108,8 +155,13 @@ Date retrieved: Wednesday, November 12, 2025
       <li><a href="#news">Resume</a></li>
       <li><a href="#home">Contact</a></li>
     </ul>
+
+    <div class="overlay">
+      <img src="Banner.png" alt="Banner image" style="width:100%;">
+      <div class="centered"><mark>Product Management Portfolio</mark></div>
+    </div>
     
-    <img src="Banner.png" alt="Banner image" style="width:100%;">
     
+
   </body>
 </html>
