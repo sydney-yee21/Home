@@ -134,11 +134,11 @@ Date retrieved: Wednesday, November 12, 2025
         border-radius: 10px;
       }
 
-      #content {
+      .content {
         width: 100%;
         display: block;
-        float: left;
-        clear: right;
+        overflow: hidden;
+        clear: both;
       }
 
       .triple {
@@ -149,9 +149,9 @@ Date retrieved: Wednesday, November 12, 2025
         margin-right: 5px;
         background-color: white;
         margin-top: 1.5em;
-        height: 4em;
         text-align: center;
         color: rgb(146, 110, 79);
+        padding-bottom: 0;
       }
 
       .triple img {
@@ -161,6 +161,15 @@ Date retrieved: Wednesday, November 12, 2025
 
       .triple img:hover {
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      }
+
+      .fullwidth {
+        width: 100%;
+        display: block;
+        clear: both;
+        margin: 0;
+        margin-top: 2em;
+        height: auto;
       }
     </style>
   </head>
@@ -188,27 +197,35 @@ Date retrieved: Wednesday, November 12, 2025
 
     <div class="content">
       <div class="triple">
-        <a href="https://www.netflix.com/browse"></a>
         <h3>
           Videography
         </h3>
-        <img src="videography.png" alt="Allen Station, Ion light rail picking up people on the platform" style="width:100%;">
+        <a href="#videography"><img src="videography.png" alt="Allen Station, Ion light rail picking up people on the platform" style="width:100%;"></a>
+
       </div>
 
       <div class="triple">
         <h3>
           Service Design
         </h3>
-        <img src="cardtitle.png" alt="I Want To Speak To Your Manager card game title" style="width:100%;">
+        <a href="#service"><img src="cardtitle.png" alt="I Want To Speak To Your Manager card game title" style="width:100%;"></a>
       </div>
 
       <div class="triple">
         <h3>
           Website Redesign
         </h3>
-        <img src="website.png" alt="Home page layout of the Good Intention's website redesign" style="width:100%;">
+        <a href="#website"><img src="website.png" alt="Home page layout of the Good Intention's website redesign" style="width:100%;"></a>
       </div>
+      <div style="clear: both;"></div>
     </div>
+
+
+    <div class="fullwidth">
+      <img src="line.png" alt="diagonal black line" style="width:100%;">
+    </div>
+
+
 
 
 
